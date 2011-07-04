@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU Lesser General Public License along with
  * the foomo Opensource Framework. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.foomo.zugspitze.apps
+package org.foomo.zugspitze.mobile.core
 {
 	import flash.display.DisplayObject;
 
@@ -23,7 +23,8 @@ package org.foomo.zugspitze.apps
 	import org.foomo.zugspitze.core.ZugspitzeModel;
 	import org.foomo.zugspitze.events.ZugspitzeEvent;
 
-	import spark.components.TabbedViewNavigatorApplication;
+	import spark.components.ViewNavigatorApplication;
+	import org.foomo.zugspitze.core.IApplication;
 
 	[Event(name="zugspitzeControllerChanged", type="org.foomo.zugspitze.events.ZugspitzeEvent")]
 	[Event(name="zugspitzeModelChanged", type="org.foomo.zugspitze.events.ZugspitzeEvent")]
@@ -38,7 +39,7 @@ package org.foomo.zugspitze.apps
 	 * @license http://www.gnu.org/licenses/lgpl.txt
 	 * @author  franklin <franklin@weareinteractive.com>
 	 */
-	public class ZugspitzeTabbedViewNavigatorApplication extends TabbedViewNavigatorApplication implements IApplication
+	public class ZugspitzeViewNavigatorApplication extends ViewNavigatorApplication implements IApplication
 	{
 		//-----------------------------------------------------------------------------------------
 		// ~ Variables
@@ -53,7 +54,7 @@ package org.foomo.zugspitze.apps
 		// ~ Constructor
 		//-----------------------------------------------------------------------------------------
 
-		public function ZugspitzeTabbedViewNavigatorApplication()
+		public function ZugspitzeViewNavigatorApplication()
 		{
 			super();
 			_zugspitze = new Zugspitze(this);
