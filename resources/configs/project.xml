@@ -6,7 +6,7 @@
 	<type>Library Project</type>
 	<name>Flex Mobile (Spark)</name>
 	<description>Flex Mobile Examples.</description>
-	<exclude>flash</exclude>
+	<exclude>false</exclude>
 	<dependencies>
 		<id>org.foomo.core</id>
 		<id>org.foomo.zugspitze.core</id>
