@@ -18,13 +18,13 @@ package org.foomo.zugspitze.mobile.core
 {
 	import flash.display.DisplayObject;
 
+	import org.foomo.zugspitze.core.IApplication;
 	import org.foomo.zugspitze.core.Zugspitze;
 	import org.foomo.zugspitze.core.ZugspitzeController;
 	import org.foomo.zugspitze.core.ZugspitzeModel;
 	import org.foomo.zugspitze.events.ZugspitzeEvent;
 
 	import spark.components.ViewNavigatorApplication;
-	import org.foomo.zugspitze.core.IApplication;
 
 	[Event(name="zugspitzeControllerChange", type="org.foomo.zugspitze.events.ZugspitzeEvent")]
 	[Event(name="zugspitzeModelChange", type="org.foomo.zugspitze.events.ZugspitzeEvent")]
